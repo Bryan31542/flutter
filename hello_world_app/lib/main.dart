@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_app/presentation/screens/counter/counter_screen.dart';
+import 'package:hello_world_app/presentation/screens/counte_functions_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,9 +10,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CounterScreen()
+      theme: ThemeData(
+        colorSchemeSeed: Colors.blue,
+      ),
+      home: const CounterFunctionsScreen()
     );
   }
   // stateless widget needs to override build method
