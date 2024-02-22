@@ -37,7 +37,7 @@ class _CounterFunctionsScreenState extends State<CounterFunctionsScreen> {
               ),
               Text((clickCounter == 1) ? "Click" : "Clicks",
                   style: const TextStyle(fontSize: 25))
-            ],
+            ]
           ),
         ),
         floatingActionButton: Column(
